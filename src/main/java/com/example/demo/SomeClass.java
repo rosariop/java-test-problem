@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello")
 public class SomeClass {
 
-    @Value("${config.key}")
+    @Value("${config.key}") // TODO: How to mock this?
     private String key;
 
     @GetMapping
